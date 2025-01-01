@@ -7,6 +7,7 @@ from alembic import context
 from sqlalchemy.ext.asyncio import AsyncEngine
 from sqlmodel import SQLModel
 from src.book.models import Book
+from src.auth.models import User
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

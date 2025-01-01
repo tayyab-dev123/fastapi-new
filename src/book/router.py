@@ -1,9 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from src.book.bookSchema import BookUpdate, Book, BookAll, BookAllResponse
-from src.book.db.main import get_session
 from src.book.service import BookService
 from sqlmodel.ext.asyncio.session import AsyncSession
-from src.book.db.main import SessionDep
+from src.db.main import SessionDep
 
 
 book_router = APIRouter()

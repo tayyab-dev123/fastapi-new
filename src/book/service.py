@@ -4,7 +4,7 @@ from datetime import date, datetime
 from .models import Book
 from sqlmodel import select, desc
 from uuid import UUID
-from src.book.db.main import SessionDep
+from src.db.main import SessionDep
 
 
 class BookService:
